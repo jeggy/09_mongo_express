@@ -51,15 +51,15 @@ for(var i = 0; i<apis.length; i++) {
     /**
      *  Example PUT:
      *  {
- *      "where": {
- *          "_id": "5723138cf81d4aeb48dbb235"
- *      },
- *      "set": {
- *          "$set": {
- *              "username":" Fancy"
- *          }
- *      }
- *  }
+     *      "where": {
+     *          "_id": "5723138cf81d4aeb48dbb235"
+     *      },
+     *      "set": {
+     *          "$set": {
+     *              "username":" Fancy"
+     *          }
+     *      }
+     *  }
      */
     app.put(`/${api}`, function (req, res) {
         genericApi.putObject(api, req.body.where._id, req.body.set, function (err, data) {
