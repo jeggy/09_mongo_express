@@ -1,5 +1,5 @@
 {
-  "name": "mongodb_express",
+  "name": "mongodb_api",
   "version": "0.0.1",
   "description": "basic mongodb, express, and json api",
   "main": "server.js",
@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
-    "mongodb": "^2.0.45"
+    "mongoClient": "^2.0.45",
+    "body-parser": "latest",
+    "mongodb": "latest"
   }
 }
